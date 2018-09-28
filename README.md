@@ -15,4 +15,3 @@ This project demonstrates Python REST API capabilities.
     ``` 
     source venv/bin/activate
     ```
-4. Test
