@@ -1,5 +1,6 @@
 import tensorflow as tf
-from tensorflow import keras
+import tensorflow.keras
+
 
 print tf
 mnist = tf.keras.datasets.mnist
