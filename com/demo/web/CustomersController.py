@@ -2,14 +2,10 @@ from flask import Flask
 from flask import jsonify
 from flask import render_template
 from flask import request
-from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
-from flask_restful import Resource, Api
-from flask_assets import Environment, Bundle
-
+from wtforms import Form, validators, StringField
 
 from com.demo.dao.CustomerDao import CustomerDao
-
-#template folder location should be relevant to current file i.e. CustomersController.py
+# template folder location should be relevant to current file i.e. CustomersController.py
 from com.demo.models.Customer import Customer
 
 app = Flask(__name__, template_folder='../../../templates');
@@ -34,8 +30,8 @@ def getCustomers():
 
 @app.route("/customers")
 def getCustomerPage():
-    customerDao = CustomerDao();
-    return jsonify(customerDao.getCustomers());
+    form = ReusableForm(request.form)
+    return render_template("customers.html", form=form);
 
 @app.route("/savecustomer",methods=['POST'])
 def saveCustomer():

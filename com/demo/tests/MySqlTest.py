@@ -1,12 +1,12 @@
 import mysql.connector
 
 mydb = mysql.connector.connect(
-            host="127.0.0.1",
-            user="cuckoo",
-            passwd="cuckoo",
-            database="employees",
-            auth_plugin="mysql_native_password" #This line is optional, include if you SHA2 auth error
-        );
+    host="127.0.0.1",
+    user="root",
+    passwd="bcmc1234",
+    database="employees",
+    auth_plugin="mysql_native_password"  # This line is optional, include if you SHA2 auth error
+);
 
 mycursor = mydb.cursor()
 
@@ -33,7 +33,7 @@ try:
     ]
     mycursor.executemany(sql, values);
     mydb.commit();
-    print "Hello"
+    print("Hello")
 
 
 except mysql.connector.Error as err:

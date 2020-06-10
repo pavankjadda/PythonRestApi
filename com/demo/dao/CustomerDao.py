@@ -5,8 +5,8 @@ class CustomerDao:
     def __init__(self):
         self.mydb = mysql.connector.connect(
             host="127.0.0.1",
-            user="cuckoo",
-            password="cuckoo",
+            user="root",
+            password="bcmc1234",
             database="employees"
         );
         self.mycursor = self.mydb.cursor();
