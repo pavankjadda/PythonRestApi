@@ -15,4 +15,10 @@ This project demonstrates Python REST API capabilities.
     ``` 
     source venv/bin/activate
     ```
-4. Test
+### Set up DB
+1. Configure DB credentials [here](com/demo/dao/CustomerDao.py)
+2. And create database **employees** and table **customers**   
+
+## Run project
+4. Go to [com/demo/web/CustomersController.py](com/demo/web/CustomersController.py) and run the project
+5. 
