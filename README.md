@@ -21,4 +21,5 @@ This project demonstrates Python REST API capabilities.
 
 ## Run project
 4. Go to [com/demo/web/CustomersController.py](com/demo/web/CustomersController.py) and run the project
-5. 
+5. Go to http://127.0.0.1:5000/showcustomers or http://127.0.0.1:5000/customers to see list of customers
+6. Create new customer from http://127.0.0.1:5000/createcustomer 
