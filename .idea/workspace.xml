@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f388b1ff-ed1a-48f7-b4a1-580c5bb3d3f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="f388b1ff-ed1a-48f7-b4a1-580c5bb3d3f1" name="Default Changelist" comment="Updates HTML">
+      <change beforePath="$PROJECT_DIR$/.idea/PythonDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/248f7cb1-63cd-4f26-853f-acc8ce67489b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/248f7cb1-63cd-4f26-853f-acc8ce67489b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/demo/web/CustomersController.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/demo/web/CustomersController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/customers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/hello.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +33,17 @@
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -32,6 +52,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="72cb4d96-8f30-482e-bb1e-518076c8cfe4" />
   <component name="ProjectId" id="1d7SGSm9IwMlONiyrrRgXCWvob6" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -60,13 +81,21 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -198,8 +227,8 @@
     <list>
       <item itemvalue="Python.Car" />
       <item itemvalue="Python.MySqlDemo" />
-      <item itemvalue="Python.customerscontroller" />
       <item itemvalue="Python.MySqlTest" />
+      <item itemvalue="Python.customerscontroller" />
       <item itemvalue="Python.tensorflow" />
     </list>
     <recent_temporary>
@@ -212,6 +241,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -224,6 +254,8 @@
       <updated>1537906201572</updated>
       <workItem from="1591774548712" duration="548000" />
       <workItem from="1591775103706" duration="922000" />
+      <workItem from="1602953732947" duration="335000" />
+      <workItem from="1602954070917" duration="4524000" />
     </task>
     <task id="LOCAL-00001" summary="Updates structure">
       <created>1591775960544</created>
@@ -232,72 +264,103 @@
       <option name="project" value="LOCAL" />
       <updated>1591775960544</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updates HTML">
+      <created>1602958899892</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602958899892</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updates HTML">
+      <created>1602959772893</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602959772893</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updates structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates structure" />
+    <MESSAGE value="Updates HTML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates HTML" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="72" y="286" key="#SQL_Dialects" timestamp="1591774890615">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="30" y="232" key="#SQL_Dialects" timestamp="1602954305736">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="72" y="286" key="#SQL_Dialects/0.0.1440.900@0.0.1440.900" timestamp="1591774890615" />
-    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591775516571">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="30" y="232" key="#SQL_Dialects/0.0.1280.800@0.0.1280.800" timestamp="1602954305736" />
+    <state x="240" y="64" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602954227512">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1591775516571" />
-    <state x="280" y="94" width="863" height="652" key="CommitChangelistDialog2" timestamp="1591775960345">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="240" y="64" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1602954227512" />
+    <state x="224" y="34" width="831" height="653" key="CommitChangelistDialog2" timestamp="1602959772774">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="280" y="94" width="863" height="652" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591775960345" />
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom" timestamp="1591775521237">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="224" y="34" width="831" height="653" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1602959772774" />
+    <state width="1238" height="264" key="GridCell.Tab.0.bottom" timestamp="1602963100892">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591775521237" />
-    <state width="1398" height="304" key="GridCell.Tab.0.center" timestamp="1591775521235">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="264" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1602963100892" />
+    <state width="1238" height="264" key="GridCell.Tab.0.center" timestamp="1602963100890">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591775521235" />
-    <state width="1398" height="304" key="GridCell.Tab.0.left" timestamp="1591775521234">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="264" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1602963100890" />
+    <state width="1238" height="264" key="GridCell.Tab.0.left" timestamp="1602963100889">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591775521234" />
-    <state width="1398" height="304" key="GridCell.Tab.0.right" timestamp="1591775521235">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="264" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1602963100889" />
+    <state width="1238" height="264" key="GridCell.Tab.0.right" timestamp="1602963100890">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591775521235" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1591775521136">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="264" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1602963100890" />
+    <state width="1238" height="264" key="GridCell.Tab.1.bottom" timestamp="1602963100894">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591775521136" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1591775521135">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="264" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1602963100894" />
+    <state width="1238" height="264" key="GridCell.Tab.1.center" timestamp="1602963100893">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1591775521135" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1591775521135">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="264" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1602963100893" />
+    <state width="1238" height="264" key="GridCell.Tab.1.left" timestamp="1602963100893">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1591775521135" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1591775521136">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="264" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1602963100893" />
+    <state width="1238" height="264" key="GridCell.Tab.1.right" timestamp="1602963100894">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1591775521136" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1591775030835">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1238" height="264" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1602963100894" />
+    <state x="149" y="36" key="SettingsEditor" timestamp="1602964288421">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1591775030835" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1591775961692">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="149" y="36" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1602964288421" />
+    <state x="240" y="138" key="Vcs.Push.Dialog.v2" timestamp="1602959773952">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591775961692" />
+    <state x="240" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1602959773952" />
+    <state x="531" y="283" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1602954250460">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="531" y="283" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1280.800@0.0.1280.800" timestamp="1602954250460" />
+    <state x="522" y="290" width="342" height="242" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1602954236317">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="522" y="290" width="342" height="242" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.800@0.0.1280.800" timestamp="1602954236317" />
+    <state x="506" y="135" width="680" height="529" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602954404084">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="506" y="135" width="680" height="529" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1280.800@0.0.1280.800" timestamp="1602954404084" />
+    <state x="305" y="124" key="search.everywhere.popup" timestamp="1602958015937">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1602958015937" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonRestApi$customerscontroller.coverage" NAME="customerscontroller Coverage Results" MODIFIED="1591775521109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/demo/web" />
     <SUITE FILE_PATH="coverage/PythonRestApi$tensorflow.coverage" NAME="tensorflow Coverage Results" MODIFIED="1591775121872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/demo/tests" />
+    <SUITE FILE_PATH="coverage/PythonRestApi$customerscontroller.coverage" NAME="customerscontroller Coverage Results" MODIFIED="1602954624373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/demo/web" />
   </component>
 </project>

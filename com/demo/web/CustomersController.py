@@ -9,14 +9,13 @@ from com.demo.dao.CustomerDao import CustomerDao
 from com.demo.domain.Customer import Customer
 
 app = Flask(__name__, template_folder='../../../templates');
-app.config.from_object(__name__);
-#assets=Environment(app);
-#js=Bundle('js/libraries/bootstrap.min.js','js/libraries/jquery-3.3.1.min.js', output='gen/packed.js');
-#assets.register('js_all', js)
+app.config.from_object(__name__)
+
 
 class ReusableForm(Form):
     name = StringField('name:', validators=[validators.required()])
-    address=StringField('address:', validators=[validators.required()])
+    address = StringField('address:', validators=[validators.required()])
+
 
 @app.route("/")
 def home():
@@ -24,35 +23,36 @@ def home():
     return render_template("customers.html", form=form);
 
 
-@app.route("/show/customers")
-def getCustomers():
-    customerDao = CustomerDao();
-    return jsonify(customerDao.getCustomers());
+@app.route("/customers/json")
+def get_customers_json():
+    customer_dao = CustomerDao();
+    return jsonify(customer_dao.getCustomers());
+
 
 @app.route("/customers")
-def getCustomerPage():
+def get_all_customers():
     form = ReusableForm(request.form)
     return render_template("customers.html", form=form);
 
-@app.route("/save",methods=['POST'])
-def saveCustomer():
-    if request.method=='POST':
-        name=request.form['name'];
-        address=request.form['address'];
-        if name=='' or address=='':
-            return "Customer data not saved. Name or Address is empty."
-        customer=Customer(name,address);
-        customerDao = CustomerDao();
-        customerDao.insertRecord(customer);
-    return "Customer Saved Successfully";
 
-@app.route("/hello")
-def getHello():
-    return render_template("hello.html");
+@app.route("/save", methods=['POST'])
+def save_customer():
+    if request.method == 'POST':
+        name = request.form['name'];
+        address = request.form['address'];
+        if name == '' or address == '':
+            return "Customer data not saved. Name or Address is empty."
+        customer = Customer(name, address);
+        customer_dao = CustomerDao();
+        customer_dao.insertRecord(customer);
+    # Return all customers form
+    form = ReusableForm(request.form)
+    return render_template("customers.html", form=form);
+
 
 @app.route("/create")
-def getSaveCustomerPage():
-    form=ReusableForm(request.form)
+def get_save_customer_page():
+    form = ReusableForm(request.form)
     return render_template("createcustomer.html", form=form);
 
 
