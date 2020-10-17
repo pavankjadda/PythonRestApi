@@ -17,7 +17,15 @@ This project demonstrates Python REST API capabilities.
     ```
 ### Set up DB
 1. Configure DB credentials [here](com/demo/dao/CustomerDao.py)
-2. And create database **employees** and table **customers**   
+2. And create database **employees** and table **customers** with the following commands
+```
+create database if not exists employees;
+create table if not exists employees.customers
+(
+	name varchar(40) null,
+	address varchar(200) null
+);
+```
 
 ## Run project
 4. Go to [com/demo/web/CustomersController.py](com/demo/web/CustomersController.py) and run the project
