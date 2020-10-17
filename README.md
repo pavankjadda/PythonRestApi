@@ -29,5 +29,5 @@ create table if not exists employees.customers
 
 ## Run project
 4. Go to [com/demo/web/CustomersController.py](com/demo/web/CustomersController.py) and run the project
-5. Go to http://127.0.0.1:5000/showcustomers or http://127.0.0.1:5000/customers to see list of customers
-6. Create new customer from http://127.0.0.1:5000/createcustomer 
+5. Go to http://127.0.0.1:5000 to see list of customers
+6. Create new customer using the URL http://127.0.0.1:5000/create 
