@@ -6,12 +6,13 @@ class CustomerDao:
         self.mydb = mysql.connector.connect(
             host="127.0.0.1",
             user="root",
-            password="bcmc1234",
+            port=33061,
+            password="Test@2020",
             database="employees"
         );
         self.mycursor = self.mydb.cursor();
 
-    def insertRecord(self,customer):
+    def insertRecord(self, customer):
         try:
             mydb = self.mydb;
             mycursor = self.mycursor;
@@ -64,4 +65,9 @@ class CustomerDao:
         self.mycursor.execute("Create database employees");
 
     def createTable(self):
-        self.c
+        self.mycursor.execute("""create table if not exists employees.customers
+                                (
+                                    name varchar(40) null,
+                                    address varchar(200) null
+                                );
+                                """);

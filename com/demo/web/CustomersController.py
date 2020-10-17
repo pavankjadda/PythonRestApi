@@ -6,7 +6,7 @@ from wtforms import Form, validators, StringField
 
 from com.demo.dao.CustomerDao import CustomerDao
 # template folder location should be relevant to current file i.e. CustomersController.py
-from com.demo.models.Customer import Customer
+from com.demo.domain.Customer import Customer
 
 app = Flask(__name__, template_folder='../../../templates');
 app.config.from_object(__name__);
@@ -20,10 +20,11 @@ class ReusableForm(Form):
 
 @app.route("/")
 def home():
-    return "Hello World";
+    form = ReusableForm(request.form)
+    return render_template("customers.html", form=form);
 
 
-@app.route("/showcustomers")
+@app.route("/show/customers")
 def getCustomers():
     customerDao = CustomerDao();
     return jsonify(customerDao.getCustomers());
@@ -33,7 +34,7 @@ def getCustomerPage():
     form = ReusableForm(request.form)
     return render_template("customers.html", form=form);
 
-@app.route("/savecustomer",methods=['POST'])
+@app.route("/save",methods=['POST'])
 def saveCustomer():
     if request.method=='POST':
         name=request.form['name'];
@@ -49,7 +50,7 @@ def saveCustomer():
 def getHello():
     return render_template("hello.html");
 
-@app.route("/createcustomer")
+@app.route("/create")
 def getSaveCustomerPage():
     form=ReusableForm(request.form)
     return render_template("createcustomer.html", form=form);

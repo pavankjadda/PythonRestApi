@@ -1,6 +1,6 @@
 #self and this are same. It can be anything but it should be first paramater in method
 
-from com.demo.models.Owner import Owner
+from com.demo.domain.Owner import Owner
 
 class Car:
     def __init__(self,make,model,color,year,owner):
